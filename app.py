@@ -28,7 +28,7 @@ def create_table():
 # Rota para a página de cadastro
 @app.route('/')
 def cadastro():
-    return render_template('cadastro.html')
+    return render_template('index.html')
 
 # Rota para lidar com o envio do formulário
 @app.route('/cadastrar', methods=['POST'])
