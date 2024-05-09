@@ -17,7 +17,7 @@ def create_table():
             nome TEXT NOT NULL,
             genero TEXT NOT NULL,
             email TEXT NOT NULL,
-            telefone TEXT NOT NULL,
+            telefone TEXT,
             endereco TEXT NOT NULL,
             senha TEXT NOT NULL
         )
@@ -58,4 +58,3 @@ def cadastrar():
 if __name__ == '__main__':
     create_table()
     app.run(debug=True)
-    
