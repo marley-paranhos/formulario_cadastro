@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/js/login.js" defer></script>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+    <script src="/static/js/cadastro.js" defer></script>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/img/cadastro/logo1.png" alt="Logo cozinha20">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="equipe.html">Equipe</a></li>
+                    <li class="nav-item"><a href="receitas.html">Receitas</a></li>
+                    <li class="nav-item"><a href="loja.html">Loja</a></li>
+                    <li class="nav-item"><a href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+    <section>
+        <div class="form">
+            <h2>Cadastro</h2>
+            <form action="/cadastrar" method="post">
+                <div class="form-group">
+                    <label for="nome">*Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="genero">*Genero:</label>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="feminino" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <p id="genero-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email-form" name="email" required>
+                    <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">*Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <p id="tel-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">*Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                    <p id="endereco-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="senha">*Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <div class="form-group">
+                    <label for="contra-senha">*Confirmar Senha:</label>
+                    <input type="password" id="contra-senha" name="contra-senha" required>
+                    <p id="contra-senha-helper" class="helper-text">Mensagem de ajuda</p>
+                </div>
+                <input type="submit" id="cadastrar" value="Cadastrar">
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Cozinha20</h1>
+            <p>As melhores receitas na sua mão.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram">I</i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f">F</i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp">W</i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Contatos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">whatsapp</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Facebook</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Instagram</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Serviços</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Receitas</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Loja</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Diversos</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+
+            <p>
+                Deixe seu e-mail para receber atualizações.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        @2024 Direitos reservados ao grupo3
+    </div>
+</footer>                    
+</body>
+</html>
