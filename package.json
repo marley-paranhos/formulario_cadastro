@@ -1,4 +1,15 @@
-"scripts": {
-    "start": "python app.py"
+{
+    "name": "sua-aplicacao",
+    "version": "1.0.0",
+    "description": "Descrição da sua aplicação",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "Seu Nome",
+    "license": "MIT",
+    "dependencies": {
+      // Lista de dependências do seu projeto
+    }
   }
   
