@@ -1,15 +1,12 @@
 {
-    "name": "sua-aplicacao",
+    "name": "projeto-flask",
     "version": "1.0.0",
-    "description": "Descrição da sua aplicação",
-    "main": "index.js",
+    "description": "Um projeto Flask simples",
+    "main": "app.py",
     "scripts": {
-      "start": "node index.js"
+      "start": "python app.py"
     },
     "author": "Seu Nome",
-    "license": "MIT",
-    "dependencies": {
-      // Lista de dependências do seu projeto
-    }
+    "license": "MIT"
   }
   
